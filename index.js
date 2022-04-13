@@ -30,10 +30,11 @@ app.use(cors(corsOptions))
 connect()
 
 app.use(express.static('public'))
-app.use('/AlbumY', albumRouter)
+app.use('', albumRouter)
 
 app.listen(process.env.PORT || port, () => {
     console.log('Server is on port ' + port)
 })
-// console.log(imagesDatabase);
-// console.log('this is my DB!');
+
+// server app URL
+// https://album-my.herokuapp.com/
